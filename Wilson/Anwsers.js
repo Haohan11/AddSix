@@ -2,16 +2,19 @@
 export default [
 //第一種
 array => {
-	return array.splice(5,0,6);
+	array.splice(5,0,6);
+	return array;
 },
 //第二種
 array => {
 	array.reverse();
 	array.unshift(6);
-	return array.reverse();
+	array.reverse();
+	return array;
 },
 //第三種
 array => {
 	array.concat([6]);
+	return array;
 }
 ];
